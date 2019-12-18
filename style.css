@@ -1,6 +1,9 @@
 body{
     background-color: #D8BFD8;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    max-width:960px;
+    margin-left:auto ;
+    margin-right:auto;
 }
 h1{
     color:black;
@@ -47,15 +50,10 @@ hr{
     color:black;
     position: absolute;
 }
-@media screen and (max-width: 300px) {
-    #Container {
-      max-width: 100%;
+@media screen and (max-width: 320px) {
+    #Container{
+       width:100%
     } 
 } 
-@media screen and (max-width: 300px) {
-    button {
-        padding:0;
-        
-    } 
-} 
+
 
