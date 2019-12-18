@@ -6,22 +6,27 @@ var chars=[];
 
 function passwordLength(){
     do{
-        var length=prompt("Please select the length of password between 8 to 128 !!!")
+        var length=prompt("Please select the length of password between (8-128)!")
+        if(prompt!=true)
+        {
+            break
+        }
     }
     while(length < 8 || length > 128 )
     return length;
 }
+
 // passwordLength();
 // userInput();
 function userInput(){
     do{
-        var upperAlphabet=confirm("do you uppercase in your password");
-        var lowerAlphabet=confirm("do you lowecase in your password");
-        var digit=confirm("do you number in your password");
-        var specialcahracter=confirm("do you special character in your password");
+        var upperAlphabet=confirm("Do you want UPPERCASE in your passowrd ?");
+        var lowerAlphabet=confirm("Do you want LOWERCASE in your passowrd ?");
+        var digit=confirm("Do you want NUMBERS in your passowrd ?");
+        var specialcahracter=confirm("Do you want SPECIAL CHARS in your passowrd ?");
         if(upperAlphabet===false && lowerAlphabet===false && digit===false && specialcahracter===false)
         {
-            alert("please select one special charater")
+            alert("Please select one of the above criteria")
         }
         else
         {
