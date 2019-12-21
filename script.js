@@ -4,17 +4,17 @@ var lowerCase=['a','b','c','d','e','f','g','i','j','k','l','m','o','p','q','r','
 var specialChar=["!","@","#","$","%","^","&","*","(",")","-","+","<",">"];
 var chars=[];
 
+//Ask for password length.
 function passwordLength(){
     do{
         var length=prompt("Please select the length of password between (8-128)!")
-       
     }
-    while(length < 8 || length > 128 )
+    while(length < 8 || length > 128)
     return length;
 }
+var length = passwordLength();
 
-// passwordLength();
-// userInput();
+//Ask for allowed password character type.
 function userInput(){
     do{
         var upperAlphabet=confirm("Do you want UPPERCASE in your passowrd ?");
@@ -49,11 +49,9 @@ function userInput(){
         chars.push.apply(chars, specialChar);  
     }
 }
-
-var length = passwordLength();
 userInput();
+
 function createPassword(){
-    
     var password="";
     for(var i = 0; i< length; i++)
     {
@@ -61,15 +59,15 @@ function createPassword(){
         password += chars[characters]
     }
     return password;
-  }
+}
 
- function generatePassword(){
+function generatePassword(){
    var password =createPassword();
    var generate=document.querySelector('#password-textarea');
    generate.textContent= password;
-
-
 }
+
+//Copy paswword to clipboard
 function copyClipboard(){
     var generate=document.querySelector('#password-textarea');
     generate.select();
@@ -77,7 +75,7 @@ function copyClipboard(){
     alert("Copied the text: " + generate.value);
 
 }
-// 
+
 
 
         
