@@ -7,10 +7,7 @@ var chars=[];
 function passwordLength(){
     do{
         var length=prompt("Please select the length of password between (8-128)!")
-        if(prompt!=true)
-        {
-            break
-        }
+       
     }
     while(length < 8 || length > 128 )
     return length;
