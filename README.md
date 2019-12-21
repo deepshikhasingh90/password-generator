@@ -15,4 +15,11 @@ The user can select the password featues like the length of the password,Special
 
 ### Programme logic :
 
+1. The user is asked to select the length of the password and the characters he needs in his password. 
+2. I created arrays for Uppercase, Lowercase, Special Characters and Numbers.
+3. I Also created an empty array chars[], and depending on the user's choice of character , the created arrays would be pushed into the empty array chars[].
+4. I used Math.random to randomly select values from the chars[] array.
+
+
+
 
